@@ -85,25 +85,25 @@
 
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
+			<artifactId>javax.servlet-api</artifactId><server>
 			<version>3.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 		
 	</dependencies>
 	
-	<distributionManagement>
 	
+	<distributionManagement>
 	    <repository>
 	      <id>nexus</id>
 	      <name>Facebook Technologies Releases Nexus Repository</name>
-	      <url>http://52.66.145.132:8081/repository/facebook-releases/</url>
-	    </repository>
+	      <url>http://3.109.56.153:8081/repository/facebook-releases/</url>
+	    </repository> 
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Facebook Snapshot Nexus Repository </name>
-	      <url>http://52.66.145.132:8081/repository/facebook-snapshot/</url>
+	      <url>http://3.109.56.153:8081/repository/facebook-snapshot/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
