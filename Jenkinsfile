@@ -3,7 +3,7 @@ node {
  echo " the node name is : ${env.NODE_Name} "
  echo " the build number is :${env.BUILD_NUMBER} "
   
- buildName 'dev'
+ buildName 'dev-#${BUILD_NUMBER}'
  properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
  
  def mavenHome= tool name :"maven3.9.3"
