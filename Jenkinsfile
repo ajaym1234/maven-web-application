@@ -1,4 +1,7 @@
 node { 
+ // global variables used
+ echo " the node name is : ${env.NODE_Name} "
+ echo " the build number is :${env.BUILD_NUMBER} "
  def mavenHome= tool name :"maven3.9.3"
     
     stage ('checkout'){
